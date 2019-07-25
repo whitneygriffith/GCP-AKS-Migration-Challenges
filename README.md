@@ -1,20 +1,23 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Introduction
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Perhaps this is a place where we can talk about our project.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+I've added user stories (primitive ones) here.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+# Next Steps
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+It might make sense to find tutorials for these user stories and think of ways where small teams can work together to deliver code for each user story.
+
+If any of us have time we can find tutorials for each of these and simply add them inline so everybody can see everything.
+
+- As a cluster admin, I want to provision the cluster, from script or Terraform so that we can implement Infrastructure as code.
+
+- As a developer I would like to deploy Spring Boot Java Containers to K8s so that I can support a microservice app.
+
+- As a developer I need to provision and get connectivituy to Postgres/Redis so that the microservices have persistent storage.
+
+- As a infrastructure engineer I need to figure out how to map AWS-specific technologies to Azure so that we have a platform to host our microservice apps.
+
+- As a cluster admin I want to use Terraform to provision my infrastructure so we can have a single platform for provisioning infrastructure.
+
+- As a network administrator, I would like to migrate any VPCs to Azure VPNs so the proper routing rules, policies, security, addressing, subnetting works properly.
