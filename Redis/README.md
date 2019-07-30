@@ -1,0 +1,1 @@
+# Redis on Azure Notes
