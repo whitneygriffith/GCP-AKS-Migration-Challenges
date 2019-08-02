@@ -7,3 +7,9 @@ Links:
 - [HOW TO SET UP A RABBITMQ CLUSTER ON AZURE](https://www.linkedin.com/pulse/how-set-up-rabbitmq-cluster-azure-akshay-kunila/)
 - [Setup RabbitMQ on Azure Container Service using Kubernetes and Helm](https://ppolyzos.com/2017/07/19/setup-rabbitmq-on-azure-container-service-using-kubernetes-and-helm/)
 
+
+How can I rabbitmq messages to myself? 
+
+You need to install docker and host RabbitMQ in a container in Azure. 
+
+Then connect the two... 
