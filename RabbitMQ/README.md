@@ -6,6 +6,7 @@ Links:
 - [Bitnami RabbitMQ](https://bitnami.com/stack/rabbitmq/cloud/azure)
 - [HOW TO SET UP A RABBITMQ CLUSTER ON AZURE](https://www.linkedin.com/pulse/how-set-up-rabbitmq-cluster-azure-akshay-kunila/)
 - [Setup RabbitMQ on Azure Container Service using Kubernetes and Helm](https://ppolyzos.com/2017/07/19/setup-rabbitmq-on-azure-container-service-using-kubernetes-and-helm/)
+- [.NET Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html)
 
 # Challenge 1 
 
