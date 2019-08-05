@@ -14,6 +14,10 @@ _As a software engineer I need to optimize the performance of my PostgreSQL serv
     --- | --- | ---
     Load of data (1M events) | 4 minutes | 30 seconds with 32 shards
 
+_As a software engineer I need to know what tools I can use to connect to my PostgreSQL service_
+
+[Connect to PostgreSQL with Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/quickstart-postgres?view=sql-server-2017)
+
 #### Citus/HyperScale 
 
 [Citus Azure PostgreSQL Announcement](https://www.citusdata.com/blog/2019/05/06/introducing-hyperscale-citus-on-azure-database-for-postgres/)
