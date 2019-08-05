@@ -9,6 +9,14 @@ _As a software engineer I need to provision a managed PostgreSQL service in Azur
 _As a software engineer I need to optimize the performance of my PostgreSQL service_
 
 1. Choosing between Single server vs Citus: Hyperscale
+    
+    Action | Single Server | Hyperscale 
+    --- | --- | ---
+    Load of data (1M events) | 4 minutes | 30 seconds with 32 shards
+
+#### Citus/HyperScale 
+
+[Citus Azure PostgreSQL Announcement](https://www.citusdata.com/blog/2019/05/06/introducing-hyperscale-citus-on-azure-database-for-postgres/)
 
 _As a software engineer I need to be aware of the known limitations of  my PostgreSQL service_
 
@@ -18,7 +26,8 @@ _As a software engineer I need to be aware of best practices around my managed P
 2. Securing my data access end points
 3. Optimizing Latency 
 4. Optimizing Queries 
-5. Data Back up / Redundancy 
+5. [Data Backup](https://docs.microsoft.com/en-us/azure/postgresql/concepts-backup)
+    a. Choose between locally redundant or geo-redundant backup service 
 6. Geo-replication
 7. Access Control using AAD 
 
