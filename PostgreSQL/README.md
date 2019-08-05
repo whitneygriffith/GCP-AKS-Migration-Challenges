@@ -1,10 +1,14 @@
 # PostgreSQL on Azure Notes
 
-_As a software engineer I need to provision a managed PostgreSQL service in the cloud_
+### PostgreSQL Specific 
+_As a software engineer I need to provision a managed PostgreSQL service in Azure_
 
-_As a software engineer I need to provision a managed PostgreSQL service using ARM templates_
+1. Azure Portal 
+2. ARM Templates
 
 _As a software engineer I need to optimize the performance of my PostgreSQL service_
+
+1. Choosing between Single server vs Citus: Hyperscale
 
 _As a software engineer I need to be aware of the known limitations of  my PostgreSQL service_
 
@@ -16,6 +20,7 @@ _As a software engineer I need to be aware of best practices around my managed P
 4. Optimizing Queries 
 5. Data Back up / Redundancy 
 6. Geo-replication
+7. Access Control using AAD 
 
 ### Connection to Redis Cache 
 
@@ -25,5 +30,11 @@ _As a software engineer I need to connect my managed PostgreSQL service to Redis
 
 _As a software engineer I need to connect my containerized spring boot applications to use our off-cluster PostgreSQL data service_
 
+#### Open Service Broker- Communication Tool 
+[Connect applications running in Kubernetes to Azure Database for PostgreSQL using the Open Service Broker for Azure](https://azure.microsoft.com/en-us/resources/videos/postg-osba-vid/)
+[Example Architecture](https://azure.microsoft.com/en-us/solutions/architecture/migrate-existing-applications-with-aks/)
 
+## Stretch Goals 
+
+### Migrating Existing Data into Azure Postgres 
 
