@@ -18,6 +18,7 @@ If any of us have time we can find tutorials for each of these and simply add th
 - As a developer I need to provision and get connectivituy to Postgres/Redis so that the microservices have persistent storage.
 
 - As a infrastructure engineer I need to figure out how to map AWS-specific technologies to Azure so that we have a platform to host our microservice apps.
+    1. AWS to Azure Services Mapping - https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services
 
 - As a cluster admin I want to use Terraform to provision my infrastructure so we can have a single platform for provisioning infrastructure.
     1. https://docs.microsoft.com/en-us/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks - Same as above
