@@ -14,8 +14,9 @@ Deployment Options:
     
 Comparison | Single Server | Hyperscale (Citus)
 --- | --- | ---
+Use Cases | | Multi-Tenant Applications or Requires Data Analytics Insights for a large data set, and streaming events
 Load of data (1M events) | 4 minutes | 30 seconds with 32 shards
-Data Workload | | >= 100 GB of data
+Data Workload | | >= 100 GB of data, ideally 1TB 
 Best For | Broad range of traditional transactional workloads | Ultra-high performance. Multi-tenant applications and real-time analytical workloads that need sub-second response.
 Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across multiple machines. 32 
 
@@ -49,14 +50,33 @@ Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across
 
 #### User Story: _As a software engineer I need to connect my containerized spring boot applications to use our off-cluster PostgreSQL data service_
 
-**Challenge: Communicate between AKS and Azure PostgreSQL using Open Service Broker**
+**Challenge: Communicate between AKS and Azure PostgreSQLr**
 
 [Concept behind connecting AKS and Azure PostgreSQL (Single Server)](https://docs.microsoft.com/en-us/azure/postgresql/concepts-aks)
 
-[Connect applications running in Kubernetes to Azure Database for PostgreSQL using the Open Service Broker for Azure](https://azure.microsoft.com/en-us/resources/videos/postg-osba-vid/)
 
-[Example Architecture](https://azure.microsoft.com/en-us/solutions/architecture/migrate-existing-applications-with-aks/)
+1. Using Open Service Broker
 
+    *  [Connect applications running in Kubernetes to Azure Database for PostgreSQL using the Open Service Broker for Azure](https://azure.microsoft.com/en-us/resources/videos/postg-osba-vid/)
+    
+    * [Example Architecture](https://azure.microsoft.com/en-us/solutions/architecture/migrate-existing-applications-with-aks/)
+
+2. Site to Site VPN  / VNet peering 
+
+3. ExpressRoute circuit using private peering 
+
+4. Within Java Application 
+
+    *    [Guide on using PostgreSQL JDBC Driver](https://docs.microsoft.com/en-us/azure/postgresql/connect-java) 
+    
+    * Connection Information Needed:
+
+    ```
+    String host = "mydemoserver.postgres.database.azure.com";
+    String database = "mypgsqldb";
+    String user = "mylogin@mydemoserver";
+    String password = "<server_admin_password>";
+    ``` 
 
 #### User Story: _As a software engineer I need to be aware of best practices around my managed PostgreSQL service_
 
@@ -73,7 +93,11 @@ Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across
 7. Access Control using AAD 
 
 
-#### User Story: _As a software engineer I need to be aware of the known limitations of  my PostgreSQL service_
+#### User Story: _As a software engineer I need to be aware of the known limitations of  my managed PostgreSQL service_
+
+[Azure Managed Databases](https://azure.microsoft.com/en-us/product-categories/databases/)
+
+[Latest Version generally available: PostgreSQL 11](https://azure.microsoft.com/en-us/updates/postgresql-11-is-now-generally-available-in-azure-database-for-postgresql/)
 
 [Single Server](https://docs.microsoft.com/en-us/azure/postgresql/concepts-limits)
 
@@ -82,5 +106,6 @@ Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across
 
 ## Stretch Goals 
 
-### Migrating Existing Data into Azure Postgres 
+1. Migrating Existing Data into Azure Postgres 
+2. Continue along with PostgreSQL [docs](https://docs.microsoft.com/en-us/azure/postgresql/tutorial-design-database-using-azure-portal)
 
