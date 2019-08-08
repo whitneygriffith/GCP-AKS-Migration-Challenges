@@ -78,19 +78,23 @@ Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across
     String password = "<server_admin_password>";
     ``` 
 
-#### User Story: _As a software engineer I need to be aware of best practices around my managed PostgreSQL service_
+#### User Story: _As a software engineer I need to be aware of best practices and performanace metrics around my managed PostgreSQL service_
 
-1. For reading and writing data 
-2. Security 
+
+* [Monitor and gain query Performance Insights (Single Server)](https://docs.microsoft.com/en-us/azure/postgresql/tutorial-monitor-and-tune) 
+    * [TODO: Query Performance View Not Available](https://docs.microsoft.com/en-us/azure/postgresql/concepts-query-performance-insight)
+* For reading and writing data 
+* Security 
     *  Securing my data access end points
     * Securing data at rest and in motion. 
-3. Optimizing Performance
+* Optimizing Performance
     * Queries
     * Response Latency  
-5. [Data Backup](https://docs.microsoft.com/en-us/azure/postgresql/concepts-backup)
-    a. Choose between locally redundant or geo-redundant backup service 
-6. Geo-replication
-7. Access Control using AAD 
+* [Data Backup](https://docs.microsoft.com/en-us/azure/postgresql/concepts-backup)
+
+    * Choose between locally redundant or geo-redundant backup service 
+* Geo-replication
+* Access Control using AAD 
 
 
 #### User Story: _As a software engineer I need to be aware of the known limitations of  my managed PostgreSQL service_
