@@ -2,6 +2,10 @@
 
 Perhaps this is a place where we can talk about our project.
 
+# Based on Meeting, here is the focus areas:
+
+
+
 I've added user stories (primitive ones) here.
 
 # Next Steps
