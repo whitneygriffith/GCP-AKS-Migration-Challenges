@@ -28,9 +28,17 @@ Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across
 
 **Challenge: Configure a server-level firewall rule by adding your client IP address**
 
-**Challenge: Connect to your Azure Database for PostgreSQL server  using Azure Data Studio** 
+[Firewall rules](https://docs.microsoft.com/en-us/azure/postgresql/concepts-firewall-rules)
 
-#### User Story: _As a software engineer I need to know what azure tools I can use to connect to my PostgreSQL service_
+[Create and manage firewall rules](https://docs.microsoft.com/en-us/azure/postgresql/howto-manage-firewall-using-portal)
+
+**Challenge: Configures the server's firewall to accept connections from all Azure resources**
+
+NB: All Azure resources, including resources not in your subscription will have access. When selecting this option, make sure your login and user permissions limit access to only authorized users. 
+
+[Connecting to the server from Azure](https://docs.microsoft.com/en-us/azure/postgresql/concepts-firewall-rules#connecting-from-azure)
+
+**Challenge: Connect to your Azure Database for PostgreSQL server  using Azure Data Studio** 
 
 [Connect to PostgreSQL with Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/quickstart-postgres?view=sql-server-2017)
 * Once you install the PostgreSQL extension for Data Studio you may need to restart the application to see it available as a server connection type
@@ -50,6 +58,15 @@ Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across
 
 #### User Story: _As a software engineer I need to connect my containerized spring boot applications to use our off-cluster PostgreSQL data service_
 
+Connection Information Typically Needed:
+    ```
+    String host = "mydemoserver.postgres.database.azure.com";
+    String database = "mypgsqldb";
+    String user = "mylogin@mydemoserver";
+    String password = "<server_admin_password>";
+    ``` 
+
+
 **Challenge: Communicate between AKS and Azure PostgreSQLr**
 
 [Concept behind connecting AKS and Azure PostgreSQL (Single Server)](https://docs.microsoft.com/en-us/azure/postgresql/concepts-aks)
@@ -61,49 +78,34 @@ Scales | Up to 64 vCores. Dynamic scaling available | Horizontally scales across
     
     * [Example Architecture](https://azure.microsoft.com/en-us/solutions/architecture/migrate-existing-applications-with-aks/)
 
-2. Site to Site VPN  / VNet peering 
-
 3. ExpressRoute circuit using private peering 
 
 4. Within Java Application 
-
     *    [Guide on using PostgreSQL JDBC Driver](https://docs.microsoft.com/en-us/azure/postgresql/connect-java) 
-    
-    * Connection Information Needed:
 
-    ```
-    String host = "mydemoserver.postgres.database.azure.com";
-    String database = "mypgsqldb";
-    String user = "mylogin@mydemoserver";
-    String password = "<server_admin_password>";
-    ``` 
+5. VNet Service Endpoints (Often the best option)  
 
 #### User Story: _As a software engineer I need to be aware of best practices and performanace metrics around my managed PostgreSQL service_
 
-
 * [Monitor and gain query Performance Insights (Single Server)](https://docs.microsoft.com/en-us/azure/postgresql/tutorial-monitor-and-tune) 
     * [TODO: Query Performance View Not Available](https://docs.microsoft.com/en-us/azure/postgresql/concepts-query-performance-insight)
-* For reading and writing data 
-* Security 
-    *  Securing my data access end points
-    * Securing data at rest and in motion. 
-* Optimizing Performance
-    * Queries
-    * Response Latency  
 * [Data Backup](https://docs.microsoft.com/en-us/azure/postgresql/concepts-backup)
-
-    * Choose between locally redundant or geo-redundant backup service 
-* Geo-replication
-* Access Control using AAD 
+    * Choose between locally redundant or geo-redundant backup service
+        * Cannot switch between redundant or geo-redundant once the server is provisioned
+    * The minimum retention period for backups is seven days. You can set a retention period of up to 35 days.  
+* Storage
+    * Can add additional storage capacity (automatically or manually) after the creation of the server but storage can only be scaled up, not down. [Ref](https://docs.microsoft.com/en-us/azure/postgresql/concepts-pricing-tiers#storage)
+* Security 
+    * Turn on [Advanced Threat Protection](https://docs.microsoft.com/en-us/azure/postgresql/concepts-data-access-and-security-threat-protection) 
 
 
 #### User Story: _As a software engineer I need to be aware of the known limitations of  my managed PostgreSQL service_
 
-[Azure Managed Databases](https://azure.microsoft.com/en-us/product-categories/databases/)
+[What it means to have an Azure Managed Database](https://azure.microsoft.com/en-us/product-categories/databases/)
 
 [Latest Version generally available: PostgreSQL 11](https://azure.microsoft.com/en-us/updates/postgresql-11-is-now-generally-available-in-azure-database-for-postgresql/)
 
-[Single Server](https://docs.microsoft.com/en-us/azure/postgresql/concepts-limits)
+[Single Server Limits](https://docs.microsoft.com/en-us/azure/postgresql/concepts-limits)
 
 [Hyperscale (Citus)]()
 
