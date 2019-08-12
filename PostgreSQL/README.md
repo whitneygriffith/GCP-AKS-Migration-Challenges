@@ -85,6 +85,12 @@ Connection Information Typically Needed:
 
 5. VNet Service Endpoints (Often the best option)  
 
+    [How To Guide: Create and manage VNet service endpoints and VNet rules in Azure Database for PostgreSQL - Single Server by using the Azure portal](https://docs.microsoft.com/en-us/azure/postgresql/howto-manage-vnet-using-portal)
+    * [Microsoft.Sql](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services) is the formal Azure Service Type Name/Tag needed to be applied to a VNet service endpoint. This will configure service endpoint traffic for all Azure SQL Database, Azure Database for PostgreSQL and Azure Database for MySQL servers on the subnet [Ref to PostgreSQL VNet Concepts](https://docs.microsoft.com/en-us/azure/postgresql/concepts-data-access-and-security-vnet)
+    * When configuring the PostgreSQL Service Connection Security (VNet), if a VNet does **not** exist, within the PostgreSQL's Connection Security you can create a new VNet and then you will have to return there and do the Add Existing Virtual Network step. 
+	* Support for VNet service endpoints is only for General Purpose and Memory Optimized servers.
+
+
 #### User Story: _As a software engineer I need to be aware of best practices and performanace metrics around my managed PostgreSQL service_
 
 * [Monitor and gain query Performance Insights (Single Server)](https://docs.microsoft.com/en-us/azure/postgresql/tutorial-monitor-and-tune) 
