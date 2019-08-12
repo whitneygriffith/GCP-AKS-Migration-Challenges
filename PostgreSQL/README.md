@@ -58,7 +58,14 @@ NB: All Azure resources, including resources not in your subscription will have 
 
 #### User Story: _As a software engineer I need to connect my containerized spring boot applications to use our off-cluster PostgreSQL data service_
 
-Connection Information Typically Needed:
+
+**Challenge: Communicate between AKS and Azure PostgreSQLr**
+
+[Concept behind connecting AKS and Azure PostgreSQL (Single Server)](https://docs.microsoft.com/en-us/azure/postgresql/concepts-aks)
+
+
+1. Via Connection String: 
+
     ```
     String host = "mydemoserver.postgres.database.azure.com";
     String database = "mypgsqldb";
@@ -66,13 +73,7 @@ Connection Information Typically Needed:
     String password = "<server_admin_password>";
     ``` 
 
-
-**Challenge: Communicate between AKS and Azure PostgreSQLr**
-
-[Concept behind connecting AKS and Azure PostgreSQL (Single Server)](https://docs.microsoft.com/en-us/azure/postgresql/concepts-aks)
-
-
-1. Using Open Service Broker
+2. Using Open Service Broker
 
     *  [Connect applications running in Kubernetes to Azure Database for PostgreSQL using the Open Service Broker for Azure](https://azure.microsoft.com/en-us/resources/videos/postg-osba-vid/)
     
