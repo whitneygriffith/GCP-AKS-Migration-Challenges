@@ -31,6 +31,6 @@ How does the ability to filter and route messages change the integration pattern
 
 # Other challenges
 
-Can you deal with a down container? What hosting mechanism do you choose and why? 
-How can you ensure RabbitMq health, performance, and service availability? 
-Can you connect two container's together? (maybe use a logic app to tie them together?) 
+- Can you deal with a down container? What hosting mechanism do you choose and why? 
+- How can you ensure RabbitMq health, performance, and service availability? 
+- Can you connect two container's together? (maybe use a logic app to tie them together?) 
