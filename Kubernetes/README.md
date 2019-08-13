@@ -3,21 +3,30 @@
 Links:
 
 - [Azure Kubernetes Service \(AKS\)](https://docs.microsoft.com/en-us/azure/aks/)
-- [Running Kubernetes on Azure](https://kubernetes.io/docs/setup/production-environment/turnkey/azure/)
-- [Kubernetes The Hard Way on Azure](https://github.com/ivanfioravanti/kubernetes-the-hard-way-on-azure)
 - [AKS workshop](https://aksworkshop.io/)
 
 
-# Challenge 1 
+# Part I
 
-x
+## Challenge 1 
 
-# Challenge 2 
+Deploy a 3 node AKS cluster running Kubernetes version 1.13.8. Select the WestUS 2 region.
 
-x
+## Challenge 2 
 
-# Other challenges
+Set up Helm and Tiller inside the cluster. [Helm on AKS](https://docs.microsoft.com/en-us/azure/aks/kubernetes-helm)
 
-Can you deal with a down container? 
-The one in the cloud? or the local one? 
-Can you connect two container's together? (maybe use a logic app to tie them together?) 
+## Challenge 3
+
+Deploy nginx chart using helm and go to the external IP.
+
+
+Delete resource group.
+
+# Part II
+
+## Challenge 1
+
+- Deploy a /16 Virtual Network inside a resource group in WestUS 2.
+- Create a /24 subnet within the VNet
+- Deploy a 3 node AKS cluster running Kubernetes version 1.13.8
