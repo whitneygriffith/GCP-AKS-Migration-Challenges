@@ -74,6 +74,7 @@ NB: All Azure resources, including resources not in your subscription will have 
 
 4. Within Java Application 
     *    [Guide on using PostgreSQL JDBC Driver](https://docs.microsoft.com/en-us/azure/postgresql/connect-java) 
+    * [Azure Database for PostgreSQL libraries for Java](https://github.com/Azure/azure-docs-sdk-java/blob/master/docs-ref-services/postgresql.md)
 
 5. VNet Service Endpoints (Often the best option)  
 
