@@ -10,7 +10,7 @@ Links:
 
 ## Challenge 1 
 
-Deploy a 3 node AKS cluster running Kubernetes version 1.13.8. Select the WestUS 2 region.
+Deploy a 3 node AKS cluster running Kubernetes version 1.14.5. Select the WestUS 2 region.
 
 ## Challenge 2 
 
