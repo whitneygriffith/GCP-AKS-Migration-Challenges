@@ -45,15 +45,6 @@ NB: All Azure resources, including resources not in your subscription will have 
 
 
 
-
-
-
-## TODO 
-
-### Connection to Redis Cache 
-
-#### User Story: _As a software engineer I need to connect my managed PostgreSQL service to Redis Cache_
-
 ### Connection to Containerized applications
 
 #### User Story: _As a software engineer I need to connect my containerized spring boot applications to use our off-cluster PostgreSQL data service_
@@ -119,6 +110,6 @@ NB: All Azure resources, including resources not in your subscription will have 
 
 ## Stretch Goals 
 
-1. Migrating Existing Data into Azure Postgres 
+1. Migrating Existing Data into Azure PostgreSQL 
 2. Continue along with PostgreSQL [docs](https://docs.microsoft.com/en-us/azure/postgresql/tutorial-design-database-using-azure-portal)
 
