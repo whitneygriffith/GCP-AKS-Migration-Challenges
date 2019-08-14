@@ -19,9 +19,9 @@
 [Secure usng Virtual Networks](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-premium-vnet)
 
 
-#### User Story: _As a software engineer I need to connect my containerized spring boot applications to use our off-cluster Redis Cache_
-
 ### Java Specific
+
+#### User Story: _As a software engineer I need to connect my containerized spring boot applications to use our off-cluster Redis Cache_
 
 **Challenge: Communicate between Java and Azure Cache for Redis**
 [Connect to Java Applictaion using Jedis](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-java-get-started#create-a-new-java-app)
