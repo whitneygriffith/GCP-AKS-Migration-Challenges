@@ -39,3 +39,6 @@
 [Configure a Spring Boot Initializer app to use Redis in the cloud with Azure Redis Cache](https://docs.microsoft.com/en-us/java/azure/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?view=azure-java-stable)
 
 [Configuring Azure Redis Cache to boost Spring Boot performance ](https://dev.to/azure/configuring-azure-redis-cache-to-boost-spring-boot-performance-7-7-52dl)
+
+[Connecting to Azure Redis Cache from redis-cli](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-redis-cli-tool)
+* Redis-cli does not support ssl connections
